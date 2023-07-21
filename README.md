@@ -1,1 +1,2 @@
 # Docker
+### SOTC DOCKER SESSION - 16/07/2023
