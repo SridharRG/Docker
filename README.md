@@ -1,5 +1,13 @@
 # DOCKER
 
+### Explanation and Purpose:
+
+- The Dockerfile is used to create a custom Docker image for your Nginx web server. It starts with the official Nginx base image, copies your index.html file into the container, and sets up the web server to serve the HTML content.
+
+- The docker-compose.yml file is used to define and manage the Docker containers for your application. It specifies that there is one service, named "web," which is built from the current directory (where the Dockerfile is located). The ports configuration allows you to access the Nginx web server running inside the container from your host machine.
+
+- By using Docker and docker-compose, you can easily package your web server and its required files into a container, making it portable and reproducible across different environments. Docker containers provide isolation, allowing you to run your application consistently, regardless of the underlying host system's configuration.
+
 **1. Dockerfile:**
 ```Dockerfile
 FROM nginx:alpine
